@@ -18,12 +18,12 @@ The system is designed to simplify administrative tasks, ensure accurate record-
 
 *Key Features of the Gym Paradise Management System:*
 
-1.*Admin Login*
-2.*Membership Packages*
-3.*Member Directory*
-4.*Class Scheduling*
-5.*Trainer Profiles*
-6.*Product Inventory*
+- *Admin Login*
+- *Membership Packages*
+- *Member Directory*
+- *Class Scheduling*
+- *Trainer Profiles*
+- *Product Inventory*
 
 The Gym Management System empowers administrators with the tools needed to optimize gym operations while enhancing the member experience. By adopting this innovative solution, Gym Paradise aims to revolutionize fitness management, providing a solid foundation for its continued expansion and success.
 
