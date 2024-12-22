@@ -28,12 +28,30 @@ Key Features of the Gym Management System:
 The Gym Management System empowers administrators with the tools needed to optimize gym operations while enhancing the member experience. By adopting this innovative solution, Gym Paradise aims to revolutionize fitness management, providing a solid foundation for its continued expansion and success.
 
 ## Objectives
-
 1. **Streamline Gym Management Processes**:
    Automate operations like managing membership packages, scheduling   classes, and overseeing trainer availability to reduce manual effort.
 
+2. **Centralize Gym Data Management**:
+   Provide a single platform for administrators to manage all aspects of gym operations.
+
+3. **Enhance Operational Efficiency**
+   Streamline the creation, updating, and deletion of membership packages, trainers, classes, and products.
+
+4. **Facilitate Inventory & Product Management**:
+   Enable gym administrators to manage gym-related products, ensuring availability for customers.
+
+5. **Provide Scalability for Growth**:
+   Build a system that supports adding new classes, trainers, and products as the gym expands.
+
+6. **Improve Member Experience**:
+   Indirectly enhance customer satisfaction by ensuring accurate schedules, availability of trainers, and prompt access to products and services through effective management.
 
 ## Features and Functionalities
+Features:
+
+1. **Login/Authentication**:
+   - Secure login for admins to access and manage all system modules.
+- Authentication and authorization to ensure system security.
 
 
 ## Entity-Relationship Diagram (ERD)
