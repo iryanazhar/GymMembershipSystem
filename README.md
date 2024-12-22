@@ -5,7 +5,7 @@
 - *Member 2*: Nasrun Asri Bin Muhammad (2210479)
 - *Member 3*: 
 - *Member 4*: 
-- *Member 5*: 
+- *Member 5*: Nur Ain Binti Mohamad Hisham (2216894)
 
 # Gym Management System for Gym Paradise
 
