@@ -51,8 +51,56 @@ Features:
 
 1. **Login/Authentication**:
    - Secure login for admins to access and manage all system modules.
-- Authentication and authorization to ensure system security.
+   - Authentication and authorization to ensure system security.
+2. **Membership Packages**:
+   - View, create, edit, and delete gym membership plans.
+   - Allow customization of membership plans based on duration and pricing.
+3. **Membership Directory**:
+   - Register new gym members and maintain a detailed directory of all    members.
+   - View and update member profiles, including contact information, membership packages, and join date.
+   - Remove inactive or expired memberships.
+4. **Class Scheduling**:
+   - Create and manage schedules for fitness classes offered by the gym.
+   - Allow administrators to view class rosters, timings, and capacities.
+   - Update class details such as duration, instructors, or cancellations.
+5. **Trainer Profiles**:
+   - Add, view, edit, and remove gym trainer profiles.
+   - Manage trainer availability, expertise, and schedules.
+   - Assign trainers to specific classes or personal training sessions.
+6. **Product Inventory**:
+   - Manage gym-related products, including equipment, apparel, supplements, and accessories
+   - Add, update, and remove products from the inventory.
+   - Track product inventory, pricing, and descriptions.
+  
+System Functionalities:
 
+1. **Admin Features (Login/Authentication)**:
+   - User Authentication: Verify admin credentials using secure login mechanisms
+   - Authorization: Restrict access to system functionalities based on admin roles.
+   - Password Management: Provide options for password resets and updates.
+2. **Membership Packages**:
+   - Package Management: Add, edit, or delete membership plans with details such as name, duration, and pricing.
+   - Package Display: List all available membership packages in an organized manner.
+3. **Membership Directory**:
+   - Member Registration: Add new members with details like contact information, membership plans, and join dates.
+   - Member Profiles: Retrieve detailed member profiles, including package information and contact details.
+   - Member Search: Implement search functionality to quickly locate members by name, ID, or package.
+   - Profile Updates: Allow admins to edit member details when necessary.
+   - Inactive Membership Management: Identify and remove inactive or expired members from the directory.
+4. **Class Scheduling**:
+   - Class Management: Create, edit, and delete class schedules with details like time, duration, and capacity.
+   - Class Assignments: Assign trainers to specific classes based on expertise and availability.
+   - Plan Management: View class plan to monitor member enrollments and attendance.
+   - Schedule Notifications: Notify members and trainers about updates or cancellations.
+5. **Trainer Profiles**:
+   - Trainer Management: Add, edit, or remove trainer profiles with details like expertise and availability.
+   - Trainer Assignments: Assign trainers to classes or personal training sessions.
+   - Schedule Management: Track and update trainer schedules to avoid conflicts.
+   - Search and Filter: Enable search by trainer name, expertise, or schedule for efficient management.
+6. **Product Inventory**:
+   - Inventory Management: Add, update, and remove products like gym equipment, supplements, and accessories.
+   - Stock Monitoring: Track stock levels and flag low inventory items for restocking.
+   - Product Details: Maintain detailed records of product pricing, descriptions, and availability.
 
 ## Entity-Relationship Diagram (ERD)
 
