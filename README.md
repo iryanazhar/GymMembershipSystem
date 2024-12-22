@@ -29,6 +29,9 @@ The Gym Management System empowers administrators with the tools needed to optim
 
 ## Objectives
 
+1. **Streamline Gym Management Processes**:
+   Automate operations like managing membership packages, scheduling   classes, and overseeing trainer availability to reduce manual effort.
+
 
 ## Features and Functionalities
 
