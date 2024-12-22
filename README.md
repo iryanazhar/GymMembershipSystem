@@ -4,7 +4,7 @@
 - *Member 1*: Iryan Syauqi Bin Azhar (2213601)
 - *Member 2*: Nasrun Asri Bin Muhammad (2210479)
 - *Member 3*: 
-- *Member 4*: 
+- *Member 4*: Muhammad Iman Hakeem Bin M.D.Khairi (2215605)
 - *Member 5*: Nur Ain Binti Mohamad Hisham (2216894)
 
 # Gym Management System for Gym Paradise
