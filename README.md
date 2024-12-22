@@ -104,6 +104,70 @@ System Functionalities:
 
 ## Entity-Relationship Diagram (ERD)
 
+### Entities and Their Attributes:
+
+1. **Member**
+   - **member_id** *(PK)*  
+   - **package_id** *(FK)*  
+   - **member_name**  
+   - **contact_no**  
+   - **password**  
+   - **gender**  
+   - **join_date**  
+
+2. **Package**
+   - **package_id** *(PK)*  
+   - **package_name**  
+   - **duration**  
+   - **price**  
+
+3. **Trainer**
+   - **trainer_id** *(PK)*  
+   - **first_name**  
+   - **last_name**  
+   - **speciality**  
+   - **hire_date**  
+
+4. **Classes**
+   - **class_id** *(PK)*  
+   - **class_name**  
+   - **trainer_id** *(FK)*  
+   - **schedule**  
+   - **duration**  
+
+5. **Enrollments**
+   - **enrollment_id** *(PK)*  
+   - **member_id** *(FK)*  
+   - **class_id** *(FK)*  
+   - **enrollment_date**  
+
+6. **Payments**
+   - **payment_id** *(PK)*  
+   - **member_id** *(FK)*  
+   - **payment_date**  
+   - **amount**  
+   - **payment_method**  
+
+### Relationships:
+1. **Member ↔ Package**
+   - A member subscribes to one package. *(1:1 relationship)*  
+   - **Foreign Key:** `package_id` in `Member` references `package_id` in `Package`.
+
+2. **Member ↔ Payments**
+   - A member can make multiple payments. *(1:N relationship)*  
+   - **Foreign Key:** `member_id` in `Payments` references `member_id` in `Member`.
+
+3. **Trainer ↔ Classes**
+   - A trainer can teach multiple classes. *(1:N relationship)*  
+   - **Foreign Key:** `trainer_id` in `Classes` references `trainer_id` in `Trainer`.
+
+4. **Classes ↔ Enrollments**
+   - A class can have multiple enrollments. *(1:N relationship)*  
+   - **Foreign Key:** `class_id` in `Enrollments` references `class_id` in `Classes`.
+
+5. **Member ↔ Enrollments**
+   - A member can enroll in multiple classes. *(1:N relationship)*  
+   - **Foreign Key:** `member_id` in `Enrollments` references `member_id` in `Member`.
 
 ## Sequence Diagram
 
