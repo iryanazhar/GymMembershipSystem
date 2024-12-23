@@ -171,6 +171,7 @@ System Functionalities:
 
 ## Sequence Diagram
 
+![Sequence Diagram (Gym Membership)](https://github.com/user-attachments/assets/e82f4fc7-b182-4480-bba3-b00d788bbdd9)
 
 ## References
 
