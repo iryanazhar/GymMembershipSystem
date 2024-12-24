@@ -106,68 +106,65 @@ System Functionalities:
 
 ### Entities and Their Attributes:
 
-1. **Member**
-   - **member_id** *(PK)*  
-   - **package_id** *(FK)*  
-   - **member_name**  
-   - **contact_no**  
-   - **password**  
-   - **gender**  
-   - **join_date**  
+1.Admin
+Admin ID (PK)
+Username
+Password
+Role
 
-2. **Package**
-   - **package_id** *(PK)*  
-   - **package_name**  
-   - **duration**  
-   - **price**  
+2.Membership Package
+Package ID (PK)
+Name
+Duration
+Price
 
-3. **Trainer**
-   - **trainer_id** *(PK)*  
-   - **first_name**  
-   - **last_name**  
-   - **speciality**  
-   - **hire_date**  
+3.Member
+Member ID (PK)
+Name
+Contact Information
+Membership Package ID (FK)
+Join Date
+Status
 
-4. **Classes**
-   - **class_id** *(PK)*  
-   - **class_name**  
-   - **trainer_id** *(FK)*  
-   - **schedule**  
-   - **duration**  
+4.Class
+Class ID (PK)
+Name
+Time
+Duration
+Capacity
+Trainer ID (FK)
 
-5. **Enrollments**
-   - **enrollment_id** *(PK)*  
-   - **member_id** *(FK)*  
-   - **class_id** *(FK)*  
-   - **enrollment_date**  
+5.Trainer
+Trainer ID (PK)
+Name
+Expertise
+Availability
 
-6. **Payments**
-   - **payment_id** *(PK)*  
-   - **member_id** *(FK)*  
-   - **payment_date**  
-   - **amount**  
-   - **payment_method**  
+6.Product
+Product ID (PK)
+Name
+Description
+Price
+Stock Level
 
-### Relationships:
-1. **Member ↔ Package**
-   - A member subscribes to one package. *(1:1 relationship)*  
-   - **Foreign Key:** `package_id` in `Member` references `package_id` in `Package`.
+Relationships
+Admin Manages Membership Package (One-to-Many)
+Admin Manages Member (One-to-Many)
+Admin Manages Class (One-to-Many)
+Admin Manages Trainer (One-to-Many)
+Admin Manages Product (One-to-Many)
 
-2. **Member ↔ Payments**
-   - A member can make multiple payments. *(1:N relationship)*  
-   - **Foreign Key:** `member_id` in `Payments` references `member_id` in `Member`.
+Membership Package Has many Members (One-to-Many)
+Member Belongs to Membership Package (Many-to-One)
 
-3. **Trainer ↔ Classes**
-   - A trainer can teach multiple classes. *(1:N relationship)*  
-   - **Foreign Key:** `trainer_id` in `Classes` references `trainer_id` in `Trainer`.
+Class Is taught by Trainer (Many-to-One)
+Class Has many Members (Many-to-Many)
 
-4. **Classes ↔ Enrollments**
-   - A class can have multiple enrollments. *(1:N relationship)*  
-   - **Foreign Key:** `class_id` in `Enrollments` references `class_id` in `Classes`.
+Trainer Teaches many Classes (One-to-Many)
 
-5. **Member ↔ Enrollments**
-   - A member can enroll in multiple classes. *(1:N relationship)*  
-   - **Foreign Key:** `member_id` in `Enrollments` references `member_id` in `Member`.
+Product Managed by Admin (Many-to-One)
+![diagram-export-12-24-2024-12_29_38-AM](https://github.com/user-attachments/assets/8ddfa488-4567-4b6a-8dd1-50bc9aaeb48b)
+
 
 ## Sequence Diagram
 
