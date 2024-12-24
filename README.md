@@ -172,4 +172,7 @@ Product Managed by Admin (Many-to-One)
 
 
 ## References
+## Mock-up
+![Alt text](HOME.png?raw=true)
+
 
