@@ -172,9 +172,9 @@ Product Managed by Admin (Many-to-One)
 
 
 ## References
-1.Oganda, P. A., & Terizla, R. F. (2024). Strategic management practices in dynamic business environments. Aptisi Transactions on Management (ATM), 8(1), 24–31. https://doi.org/10.33050/atm.v8i1.2192
-2.DocuPhase. (2023, October 4). Unmasking the scary truths about manual processes. DocuPhase Blog. https://www.docuphase.com/blog/unmasking-the-scary-truths-about-manual-processes
-
+1. **Oganda, P. A., & Terizla, R. F. (2024). Strategic management practices in dynamic business environments. Aptisi Transactions on Management (ATM), 8(1), 24–31. https://doi.org/10.33050/atm.v8i1.2192**:
+2. **DocuPhase. (2023, October 4). Unmasking the scary truths about manual processes. DocuPhase Blog. https://www.docuphase.com/blog/unmasking-the-scary-truths-about-manual-processes**:
+   
 
 ## Mock-up
 ![Alt text](HOME.png?raw=true)
