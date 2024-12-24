@@ -106,61 +106,61 @@ System Functionalities:
 
 ### Entities and Their Attributes:
 
-1.Admin
-Admin ID (PK)
-Username
-Password
-Role
+1 **Admin**:
+- Admin ID (PK)
+- Username
+- Password
+- Role
 
-2.Membership Package
-Package ID (PK)
-Name
-Duration
-Price
+2.**Membership Package**:
+- Package ID (PK)
+- Name
+- Duration
+- Price
 
-3.Member
-Member ID (PK)
-Name
-Contact Information
-Membership Package ID (FK)
-Join Date
+3.**Member**:
+- Member ID (PK)
+- Name
+- Contact Information
+- Membership Package ID (FK)
+- Join Date
 Status
 
-4.Class
-Class ID (PK)
-Name
-Time
-Duration
-Capacity
-Trainer ID (FK)
+4.**Class**:
+- Class ID (PK)
+- Name
+- Time
+- Duration
+- Capacity
+- Trainer ID (FK)
 
-5.Trainer
-Trainer ID (PK)
-Name
-Expertise
-Availability
+5.**Trainer**:
+- Trainer ID (PK)
+- Name
+- Expertise
+- Availability
 
-6.Product
-Product ID (PK)
-Name
-Description
-Price
-Stock Level
+6.**Product**
+- Product ID (PK)
+- Name
+- Description
+- Price
+- Stock Level
 
-Relationships
-Admin Manages Membership Package (One-to-Many)
-Admin Manages Member (One-to-Many)
-Admin Manages Class (One-to-Many)
-Admin Manages Trainer (One-to-Many)
-Admin Manages Product (One-to-Many)
+**Relationships**:
+- Admin Manages Membership Package (One-to-Many)
+- Admin Manages Member (One-to-Many)
+- Admin Manages Class (One-to-Many)
+- Admin Manages Trainer (One-to-Many)
+- Admin Manages Product (One-to-Many)
 
-Membership Package Has many Members (One-to-Many)
-Member Belongs to Membership Package (Many-to-One)
+- Membership Package Has many Members (One-to-Many)
+- Member Belongs to Membership Package (Many-to-One)
 
-Class Is taught by Trainer (Many-to-One)
-Class Has many Members (Many-to-Many)
+- Class Is taught by Trainer (Many-to-One)
+- Class Has many Members (Many-to-Many)
 
-Trainer Teaches many Classes (One-to-Many)
+- Trainer Teaches many Classes (One-to-Many)
 
 Product Managed by Admin (Many-to-One)
 ![diagram-export-12-24-2024-12_29_38-AM](https://github.com/user-attachments/assets/8ddfa488-4567-4b6a-8dd1-50bc9aaeb48b)
