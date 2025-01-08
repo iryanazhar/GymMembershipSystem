@@ -5,8 +5,9 @@
 <div class="products">
     @foreach($products as $product)
     <div class="product-box">
-        <h2>{{ $product->name }}</h2>
         <p>Product Code: {{ $product->productcode }}</p> <!-- Add this line -->
+        <h2>{{ $product->name }}</h2>
+
         <p>Price: RM {{ $product->price }}</p>
         <p>Stock: {{ $product->stock }}</p>
         <p>{{ $product->description }}</p>
