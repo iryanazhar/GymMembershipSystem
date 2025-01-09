@@ -1,6 +1,7 @@
-@extends('layout')
+@extends('master.layout')
 
 @section('content')
+
 <h1>List of Products</h1>
 <div class="products">
     @foreach($products as $product)
@@ -21,4 +22,5 @@
     @endforeach
 </div>
 <a href="{{ route('products.create') }}">Add Product</a>
+
 @endsection
