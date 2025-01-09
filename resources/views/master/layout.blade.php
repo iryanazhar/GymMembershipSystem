@@ -45,7 +45,7 @@
         </div>
         <nav class="canvas-menu mobile-menu">
             <ul>
-                <li><a href="./index.html">Log In</a></li>
+                <li><a href="/login">Log In</a></li>
                 <li><a href="/about">Package</a></li>
                 <li><a href="./classes">Classes</a></li>
                 <li><a href="./members">Members</a></li>
@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="/">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
@@ -77,7 +77,7 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Log In</a></li>
+
                             <li><a href="/package">Package</a></li>
                             <li><a href="./classes">Classes</a></li>
                             <li><a href="./members">Members</a></li>
