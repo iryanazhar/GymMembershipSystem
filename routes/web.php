@@ -2,21 +2,28 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ClassController;
+use App\Http\Controllers\TrainerController;
+
+Route::resource('classes', ClassController::class);
+Route::get('classes', [ClassController::class, 'index'])->name('classes.index');
+
+
+Route::resource('trainers', TrainerController::class);
+Route::get('trainers', [TrainerController::class, 'index'])->name('trainers.index');
+
+
 Route::get('/', function () {
     return view('mainpage');
 });
 Route::get('/package', function () {
     return view('package');
-});
-Route::get('/classes', function () {
-    return view('classes');
+
 });
 Route::get('/members', function () {
     return view('members');
 });
-Route::get('/trainers', function () {
-    return view('trainers');
-});
+
 Route::get('/products', function () {
     return view('products');
 });
