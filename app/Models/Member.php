@@ -22,7 +22,7 @@ class Member extends Model
         'id',
         'name',
         'contact_information',
-        'membership_package_id', //still required
+        'membership_package_id',
         'gender',
         'join_date',
         'status',

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('id')->primary();
             $table->string('name');
             $table->string('contact_information');
-            $table->string('membership_package_id')->nullable();
+            $table->string('membership_package_id'); //->nullable();
             $table->string('gender');
             $table->date('join_date');
             $table->string('status');

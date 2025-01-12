@@ -47,11 +47,9 @@ Route::delete('/packages/{package}', [PackageController::class, 'destroy'])->nam
 // });
 
 // members route
-//Route::get('/members', function () {
-    //return view('members');
-//});//
 Route::resource('members', MemberController::class);
 Route::get('/members', [MemberController::class, 'index'])->name('members.index');
+
 
 Route::get('/products', function () {
     return view('products');

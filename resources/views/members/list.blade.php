@@ -5,7 +5,9 @@
     <!-- Heading -->
     <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;">List of Members</h1>
 
-    <!-- Cards Container -->
+
+
+    <!-- Container -->
     <div class="container">
         <a href="{{ route('members.create') }}" class="btn btn-success mb-3" style="background-color: green; color: white; padding: 10px 20px; font-size: 18px; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Add New Member</a>
 
@@ -77,6 +79,7 @@
                     }
                 }
             </script>
+
             {{-- @foreach($members as $member)
             <div class="col-md-4 mb-4"> <!-- Adjust the column size (col-md-4) for 3 cards per row -->
                 <div class="card" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
