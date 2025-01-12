@@ -4,8 +4,23 @@
 <!-- <div class="container mt-5"> -->
     <!-- Heading for Add Member Page -->
 <!--    <h1 class="mb-4">Add New Member</h1> -->
-
-<div style="background-image: url('img/hero/hero-2.jpg'); background-size: cover; background-position: center; padding: 70px 20px; min-height: 100vh;">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/flaticon.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/barfiller.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+<div class="hero-section" style="padding: 70px 20px; min-height: 100vh;">
+    <style>
+        .hero-section {
+            background-image: url('{{ asset('img/hero/hero-2.jpg') }}');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
     <!-- Heading -->
     <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;">Add New Member</h1>
 
@@ -69,4 +84,17 @@
         <button type="submit" class="btn btn-success mt-3">Add Member</button>
     </form>
 </div>
+<!-- Start Generation Here -->
+<script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+<script src="{{ asset('js/jquery.barfiller.js') }}"></script>
+<script src="{{ asset('js/jquery.slicknav.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<!-- End Generation Here -->
+
+
+
 @endsection
