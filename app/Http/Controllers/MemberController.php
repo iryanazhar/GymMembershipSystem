@@ -14,10 +14,6 @@ class MemberController extends Controller
         //$members = Member::with('membershipPackage')->get();
          $members = Member::all(); // Temporarily fetch members without package details
          return view('members.list', compact('members'));
-         return view('members.layout', compact('members'));
-
-
-
      }
 
      // create member form
@@ -25,20 +21,22 @@ class MemberController extends Controller
     {
         //$packages = MembershipPackage::all();
         //return view('members.create', compact('packages'));
-
-        return view('members.create'); // Use this for now as there's no packages yet
+        $members = Member::all();
+        return view('members.create', compact('members')); // Use this for now as there's no packages yet
     }
 
     // Store a new member
-    public function store(Request $request, $id)
+    public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
-            'id' => 'required|string|unique:members,id'. $id,
+            'id' => 'required|string|unique:members,id',
             'name' => 'required|string|max:255',
             'contact_information' => 'required|string|max:255',
             // temporarily accept membership_package_id as nullable
             //'membership_package_id' => 'required|string',
             'membership_package_id' => 'nullable|string|max:10', //later ganti nullable dgn required
+            // 'membership_package_id' => 'required|string|max:10|exists:membership_packages,id', // 'id', pls refer to the membership_packages' Primary key column name
             'gender' => 'required|string|in:male,female',
             'join_date' => 'required|date',
             'status' => 'required|string|in:active,inactive',
