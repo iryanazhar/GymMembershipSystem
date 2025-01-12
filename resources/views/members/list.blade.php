@@ -19,7 +19,7 @@
                         <th style="text-align: center;">Member Name</th>
                         <th style="text-align: center;">Member ID</th>
                         <th style="text-align: center;">Phone Number</th>
-                        <th style="text-align: center;">Package ID</th>
+                        <th style="text-align: center;">Package</th>
                         <th style="text-align: center;">Gender</th>
                         <th style="text-align: center;">Join Date</th>
                         <th style="text-align: center;">Status</th>
@@ -37,8 +37,10 @@
                         <td style="text-align: center;">{{ $member->join_date }}</td>
                         <td style="text-align: center;">{{ ucfirst($member->status) }}</td>
                         <td style="text-align: center;">
+                            <!-- Edit Button -->
                             <a href="{{ route('members.edit', $member->id) }}" class="btn btn-primary" style="background-color: blue; color: white; font-weight: bold; font-size: 14px;">Edit</a>
-                            <form action="{{ route('members.destroy', $member->id) }}" method="POST" style="display:inline;">
+                            <!-- Delete Button with confirmation -->
+                            <form action="{{ route('members.destroy', $member->id) }}" method="POST" style="display:inline;"onsubmit="return confirm('Are you sure you want to delete this member?');">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger" style="background-color: red; color: white; font-weight: bold; font-size: 14px;">Delete</button>

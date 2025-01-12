@@ -51,4 +51,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//Route::resource('members', MemberController::class);
+

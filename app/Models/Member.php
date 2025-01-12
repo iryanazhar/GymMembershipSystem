@@ -12,12 +12,17 @@ class Member extends Model
     // table name for model
     protected $table = 'members';
 
+    // Set the primary key to 'id' and prevent auto-incrementing
+    protected $primaryKey = 'id';
+    public $incrementing = false;  // Disable auto-increment for 'id'
+    protected $keyType = 'string'; // Set the key type to 'string'
+
     // attributes
     protected $fillable = [
         'id',
         'name',
         'contact_information',
-        'membership_package_id',
+        'membership_package_id', //still required
         'gender',
         'join_date',
         'status',
