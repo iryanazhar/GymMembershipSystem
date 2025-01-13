@@ -20,7 +20,15 @@
         }
     </style>
     <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;">Edit Member</h1>
-
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="container" style="max-width: 600px;">
         <!-- Form for Editing Member -->
         <form action="{{ route('members.update', $member->id) }}" method="POST">

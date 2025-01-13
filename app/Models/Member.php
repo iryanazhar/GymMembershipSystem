@@ -28,9 +28,4 @@ class Member extends Model
         'status',
     ];
 
-    // Define the relationship with MembershipPackage model
-    //public function membershipPackage()
-    //{
-        //return $this->belongsTo(MembershipPackage::class, 'membership_package_id', 'id');
-    //}
 }

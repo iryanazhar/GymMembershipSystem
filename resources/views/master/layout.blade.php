@@ -77,7 +77,7 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-
+                            <li><a href="/">Homepage</a></li>
                             <li><a href="/packages">Package</a></li>
                             <li><a href="./classes">Classes</a></li>
                             <li><a href="./members">Members</a></li>

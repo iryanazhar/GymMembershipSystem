@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
-//use App\Models\MembershipPackage; //nti tukar nama MembershipPackage to updated Model name
 use Illuminate\Http\Request;
 
 class MemberController extends Controller
@@ -11,7 +10,6 @@ class MemberController extends Controller
      // Display all members
      public function index()
      {
-        //$members = Member::with('membershipPackage')->get();
          $members = Member::all(); // Temporarily fetch members without package details
          return view('members.list', compact('members'));
      }
@@ -19,8 +17,6 @@ class MemberController extends Controller
      // create member form
     public function create()
     {
-        //$packages = MembershipPackage::all(); //nti tukar nama MembershipPackage to updated Model name
-        //return view('members.create', compact('packages'));
         $members = Member::all();
         return view('members.create', compact('members')); // Use this for now as there's no packages yet
     }
@@ -28,14 +24,11 @@ class MemberController extends Controller
     // Store a new member
     public function store(Request $request)
     {
-        // dd($request->all());
         $request->validate([
             'id' => 'required|string|unique:members,id',
             'name' => 'required|string|max:255',
             'contact_information' => 'required|string|max:255',
-            // temporarily accept membership_package_id as nullable
-            'membership_package_id' => 'required|string|in:basic,pro,student,daily_accesss', //later ganti nullable dgn required
-            // 'membership_package_id' => 'required|string|ikut atas|exists:membership_packages,id', // 'id', pls refer to the membership_packages' Primary key column name
+            'membership_package_id' => 'required|string|in:basic,pro,student,daily_accesss',
             'gender' => 'required|string|in:male,female',
             'join_date' => 'required|date',
             'status' => 'required|string|in:active,inactive',
@@ -48,26 +41,21 @@ class MemberController extends Controller
     // Edit member details
     public function edit($id)
     {
-        //$members = Member::all();
         $member = Member::findOrFail($id);
-        //$packages = MembershipPackage::all();
-        //return view('members.edit', compact('member', 'packages'));
 
         // pass member to the view
-        return view('members.edit', compact('member')); // Edit without package dependency
-        // later delete and reuse yg atas after package ada
+        return view('members.edit', compact('member'));
     }
 
     // Update member details
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         $request->validate([
-            'id' => 'required|string|unique:members,id'. $id,  // No $id needed for store
+            'id' => 'required|string|unique:members,id,' . $id,  // Allow current id to be excluded from uniqueness check
             'name' => 'required|string|max:255',
             'contact_information' => 'required|string|max:255',
-            // Temporarily accept 'membership_package_id' as nullable
-            'membership_package_id' => 'required|string|in:basic,pro,student,daily_access',  // later change to required
-             // 'membership_package_id' => 'required|string|ikut atas|exists:membership_packages,id', // 'id', pls refer to the membership_packages' Primary key column name
+            'membership_package_id' => 'required|string|in:basic,pro,student,daily_access',
             'gender' => 'required|string|in:male,female',
             'join_date' => 'required|date',
             'status' => 'required|string|in:active,inactive',
@@ -75,6 +63,7 @@ class MemberController extends Controller
 
         $member = Member::findOrFail($id);
         $member->update($request->all());
+        $member->save();
 
         return redirect()->route('members.index')->with('success', 'Member updated successfully!');
 
