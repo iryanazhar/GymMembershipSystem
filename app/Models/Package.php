@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Package extends Model
 {
     use HasFactory;
-
+    protected $primaryKey = 'id';
+    public $incrementing = false;
     protected $fillable = ['name', 'description', 'price'];
 }

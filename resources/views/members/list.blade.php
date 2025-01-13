@@ -79,34 +79,6 @@
                     }
                 }
             </script>
-
-            {{-- @foreach($members as $member)
-            <div class="col-md-4 mb-4"> <!-- Adjust the column size (col-md-4) for 3 cards per row -->
-                <div class="card" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-                    <!-- Card Body -->
-                    <div class="card-body">
-                        <h5 class="card-title" style="background-color: #81D8D0; color: white; padding: 10px; border-radius: 5px; font-size: 20px; text-align: center;">{{ $member->name }}</h5>
-                        <p class="card-text" style="color: #000;"><strong>Member ID:</strong> {{ $member->id }}</p>
-                        <p class="card-text" style="color: #000;"><strong>Phone Number:</strong> {{ $member->contact_information }}</p>
-                        <p class="card-text" style="color: #000;"><strong>Package ID:</strong> {{ $member->membership_package_id ?? 'N/A' }}</p>
-                        <p class="card-text" style="color: #000;"><strong>Gender:</strong> {{ ucfirst($member->gender) }}</p>
-                        <p class="card-text" style="color: #000;"><strong>Join Date:</strong> {{ $member->join_date }}</p>
-                        <p class="card-text" style="color: #000;"><strong>Status:</strong> {{ ucfirst($member->status) }}</p>
-
-                        <!-- Action Buttons -->
-                        <div class="d-flex justify-content-between">
-                            <a href="{{ route('members.edit', $member->id) }}" class="btn btn-primary" style="background-color: blue; color: white; font-weight: bold; font-size: 14px;">Edit</a>
-
-                            <form action="{{ route('members.destroy', $member->id) }}" method="POST" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger" style="background-color: red; color: white; font-weight: bold; font-size: 14px;">Delete</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach --}}
         </div>
     </div>
 </div>

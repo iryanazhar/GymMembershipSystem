@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Member;
 use Illuminate\Http\Request;
+use App\Models\Package;
+
+
+
 
 class MemberController extends Controller
 {
@@ -18,7 +22,9 @@ class MemberController extends Controller
     public function create()
     {
         $members = Member::all();
-        return view('members.create', compact('members')); // Use this for now as there's no packages yet
+        $package = Package::all();
+        // dd(compact('package'));
+        return view('members.create', compact('members', 'package')); // Use this for now as there's no packages yet
     }
 
     // Store a new member
@@ -28,7 +34,7 @@ class MemberController extends Controller
             'id' => 'required|string|unique:members,id',
             'name' => 'required|string|max:255',
             'contact_information' => 'required|string|max:255',
-            'membership_package_id' => 'required|string|in:basic,pro,student,daily_accesss',
+            'membership_package_id' => 'required|string|exists:packages,id',
             'gender' => 'required|string|in:male,female',
             'join_date' => 'required|date',
             'status' => 'required|string|in:active,inactive',
@@ -42,9 +48,9 @@ class MemberController extends Controller
     public function edit($id)
     {
         $member = Member::findOrFail($id);
-
+        $package = Package::all();
         // pass member to the view
-        return view('members.edit', compact('member'));
+        return view('members.edit', compact('member', 'package'));
     }
 
     // Update member details
@@ -55,7 +61,7 @@ class MemberController extends Controller
             'id' => 'required|string|unique:members,id,' . $id,  // Allow current id to be excluded from uniqueness check
             'name' => 'required|string|max:255',
             'contact_information' => 'required|string|max:255',
-            'membership_package_id' => 'required|string|in:basic,pro,student,daily_access',
+            'membership_package_id' => 'required|string|exists:packages,id',
             'gender' => 'required|string|in:male,female',
             'join_date' => 'required|date',
             'status' => 'required|string|in:active,inactive',

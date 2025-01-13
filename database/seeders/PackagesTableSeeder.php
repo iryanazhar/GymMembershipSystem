@@ -14,6 +14,7 @@ class PackagesTableSeeder extends Seeder
     {
         DB::table('packages')->insert([
             [
+                'id' => 'PG001',
                 'name' => 'Basic Package',
                 'description' => 'This is a basic package offering minimal features.',
                 'price' => 19.99,
@@ -21,6 +22,7 @@ class PackagesTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 'PG002',
                 'name' => 'Standard Package',
                 'description' => 'This package offers a balance of features at a moderate price.',
                 'price' => 49.99,
@@ -28,6 +30,7 @@ class PackagesTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'id' => 'PG003',
                 'name' => 'Premium Package',
                 'description' => 'This premium package includes all available features.',
                 'price' => 99.99,
