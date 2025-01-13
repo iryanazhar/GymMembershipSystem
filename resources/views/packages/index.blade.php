@@ -1,4 +1,4 @@
-@extends('master.layout-new')
+@extends('master.layout')
 
 @section('content')
 <style>
