@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name'); // Trainer's name
             $table->string('phone_no'); // Phone number
             $table->string('trainer_id')->unique(); // Unique trainer ID
-            $table->string('expertise'); // Trainer's specialty
+            $table->string('specialty'); // Trainer's specialty
             $table->enum('gender', ['Male', 'Female', 'Other']); // Gender
             $table->date('hire_date'); // Hire date
             $table->timestamps();

@@ -25,8 +25,7 @@
                             <span>Our Team</span>
                             <h2>TRAIN WITH EXPERTS</h2>
                         </div>
-                        <a href="{{ route('appointment.form') }}" class="primary-btn btn-normal appoinment-btn">Appointment</a>
-
+                        <a href="#" class="primary-btn btn-normal appoinment-btn">appointment</a>
                     </div>
                 </div>
             </div>
