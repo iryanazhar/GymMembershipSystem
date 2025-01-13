@@ -124,7 +124,7 @@ System Functionalities:
 - Contact Information
 - Membership Package ID (FK)
 - Join Date
-Status
+- Status
 
 4.**Class**:
 - Class ID (PK)
