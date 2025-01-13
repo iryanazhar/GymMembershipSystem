@@ -3,7 +3,7 @@
 ## Group Members
 - *Member 1*: Iryan Syauqi Bin Azhar (2213601)
 - *Member 2*: Nasrun Asri Bin Muhammad (2210479) 
-- *Member 3*: Muhammad Altamis Arief Bin Mohd Zahry (2212857)
+- *Member 3*: Muhammad Altamis Arief Bin Mohd Zahry (2212857) test test
 - *Member 4*: Muhammad Iman Hakeem Bin M.D.Khairi (2215605)
 - *Member 5*: Nur Ain Binti Mohamad Hisham (2216894)
 
@@ -124,7 +124,7 @@ System Functionalities:
 - Contact Information
 - Membership Package ID (FK)
 - Join Date
-Status
+- Status
 
 4.**Class**:
 - Class ID (PK)
