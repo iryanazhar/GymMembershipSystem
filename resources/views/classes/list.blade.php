@@ -10,7 +10,7 @@
         @foreach($classes as $class)
         <div class="class-box" style="background: rgba(255, 255, 255, 0.8); padding: 15px; margin: 10px; border-radius: 8px; width: 300px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
             <p style="color: #000;"><strong>Class Code:</strong> {{ $class->classcode }}</p>
-            <h2 style="background-color: #81D8D0; color: white; padding: 10px; border-radius: 5px;">{{ $class->name }}</h2>
+            <h2 style="background-color: blue; color: white; padding: 10px; border-radius: 5px;">{{ $class->name }}</h2>
             <p style="color: #000;"><strong>Time:</strong> {{ $class->time }}</p>
             <p style="color: #000;"><strong>Duration:</strong> {{ $class->duration }} minutes</p>
             <p style="color: #000;"><strong>Capacity:</strong> {{ $class->capacity }}</p>
