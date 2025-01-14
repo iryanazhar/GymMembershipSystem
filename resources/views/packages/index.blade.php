@@ -54,6 +54,7 @@
         @foreach($packages as $package)
         <div class="package-box">
             <h2 class="title-text">{{ $package->name }} [{{$package->id}}]</h2>
+
             <p class="desc-text">{!! nl2br(e($package->description)) !!}</p>
             <p class="price-text"><strong> RM {{ $package->price }} </strong></p>
             <div class="btn-box">
