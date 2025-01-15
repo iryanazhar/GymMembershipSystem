@@ -183,9 +183,11 @@ Product Managed by Admin (Many-to-One)
 ## Project system captured screen and explanation
 1.Homepage
 ![photo_6071163442762466752_y](https://github.com/user-attachments/assets/ee2a7af5-ef92-4ead-98b7-fdafe590badc)
+
 2.Log In
 ![Login](https://github.com/user-attachments/assets/27b9ab22-29d6-44c1-a72d-4b4ece1c1f16)
 This is our Log In Page, where the admin can log in into the system.
+
 7. Trainers
 ![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
 This is the trainer's page, where all the details of our trainers will be in this page. 
