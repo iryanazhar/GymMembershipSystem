@@ -209,7 +209,7 @@ This is what user can see as form for adding new package or editting any package
 5.Classes Page
 
 6.Members Page
-![image](https://github.com/user-attachments/assets/5bf9b401-b68b-4ba8-b49f-1eeed1f5e009)
+![image](https://github.com/user-attachments/assets/7ea453d4-35fe-4d01-ad6f-9c4eefe35daa)
 This is the member's page, where it will display the details of our gym members. There's a button to add new members.
 
 ![image](https://github.com/user-attachments/assets/8ea053bd-5494-4d8a-b620-d1926b8493fb)
