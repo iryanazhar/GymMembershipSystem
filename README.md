@@ -162,7 +162,8 @@ System Functionalities:
 - Trainer Teaches many Classes (One-to-Many)
 
 Product Managed by Admin (Many-to-One)
-![diagram-export-12-24-2024-12_29_38-AM](https://github.com/user-attachments/assets/8ddfa488-4567-4b6a-8dd1-50bc9aaeb48b)
+![Untitled design](https://github.com/user-attachments/assets/f93a9e3a-51e2-4568-9e41-0c108b7c44ca)
+
 
 
 ## Sequence Diagram
