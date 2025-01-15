@@ -3,7 +3,7 @@
 @section('content')
 <div style="background-image: url('img/hero/hero-2.jpg'); background-size: cover; background-position: center; padding: 70px 20px; min-height: 100vh;">
     <!-- Heading -->
-    <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;">List of Members</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 100px;">List of Members</h1>
 
 
 
