@@ -180,6 +180,11 @@ Product Managed by Admin (Many-to-One)
 ![Alt text](HOME6.png?raw=true)
 ![Alt text](HOME7.png?raw=true)
 
+## Project system captured screen and explanation
+1.homepage
+![photo_6071163442762466752_y](https://github.com/user-attachments/assets/ee2a7af5-ef92-4ead-98b7-fdafe590badc)
+
+
 ## Challenges of Developing the Application
 1. Requirement Analysis
 - We might struggle to balance the scope, potentially making the system too complex or too simplistic for the project's level.
