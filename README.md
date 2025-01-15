@@ -209,11 +209,14 @@ For admin who does not register yet. They can do so in this page. After successf
 This is the trainer's page, where all the details of our trainers will be in this page. 
 
 8.Products Page
-8.Products Page
 ![no1](https://github.com/user-attachments/assets/07766f07-9587-4ab0-b589-204a11ebb9a0)
 This page display the list of produt that available. (No product insert version)
 ![no2](https://github.com/user-attachments/assets/aa394afa-1a13-4fc8-8b5e-a80ca2523828)
 This page display the list of product that available. (Product successfully insert version)
+![cp](https://github.com/user-attachments/assets/8eeca226-8864-4c7c-bdff-4e7f30c5fc1f)
+This page shows form to create a new product details.
+![ep](https://github.com/user-attachments/assets/13ab4421-7214-405f-bde4-b98d1181c4fb)
+This page shows form to edit product details.
 
 
 ## Challenges of Developing the Application
