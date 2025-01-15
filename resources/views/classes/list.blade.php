@@ -22,11 +22,11 @@
                 <p style="color: #495057; ;"><strong>Capacity:</strong> {{ $class->capacity }}</p>
                 <p style="color: #495057; ;"><strong>Trainer:</strong> {{ $class->trainer->name }}</p>
                 <p style="color: #495057;  ;">{{ $class->description }}</p>
-                <a href="{{ route('classes.edit', $class->id) }}" class="btn btn-primary" style="background-color: blue; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Edit</a>
+                <a href="{{ route('classes.edit', $class->id) }}" class="btn btn-primary" style="background-color: #007bff; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Edit</a>
                 <form action="{{ route('classes.destroy', $class->id) }}" method="POST" style="display:inline;">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger" style="background-color: red; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Delete</button>
+                    <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Delete</button>
                 </form>
             </div>
             @endforeach

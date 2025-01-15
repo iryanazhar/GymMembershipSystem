@@ -25,7 +25,7 @@
                         <th style="text-align: center;">Member Name</th>
                         <th style="text-align: center;">Member ID</th>
                         <th style="text-align: center;">Phone Number</th>
-                        <th style="text-align: center;">Package</th>
+                        <th style="text-align: center;">Package ID</th>
                         <th style="text-align: center;">Gender</th>
                         <th style="text-align: center;">Join Date</th>
                         <th style="text-align: center;">Status</th>
