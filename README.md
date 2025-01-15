@@ -184,8 +184,9 @@ Product Managed by Admin (Many-to-One)
 ## Project system captured screen and explanation
 1.Homepage
 ![photo_6071163442762466752_y](https://github.com/user-attachments/assets/ee2a7af5-ef92-4ead-98b7-fdafe590badc)
+So this is basically what user can see for the homepage
 ![photo_6071163442762466751_y (1)](https://github.com/user-attachments/assets/47ea819a-6502-421b-a59d-95eadda09e27)
-
+footer for our homepage website
 
 2.Log In
 ![Login](https://github.com/user-attachments/assets/27b9ab22-29d6-44c1-a72d-4b4ece1c1f16)
