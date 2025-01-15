@@ -170,10 +170,6 @@ Product Managed by Admin (Many-to-One)
 
 ![Gym Paradise Semenyih](https://github.com/user-attachments/assets/edd3f1e4-8804-4b12-82a8-69129b8022dd)
 
-
-## References
-1. **Oganda, P. A., & Terizla, R. F. (2024). Strategic management practices in dynamic business environments. Aptisi Transactions on Management (ATM), 8(1), 24–31. https://doi.org/10.33050/atm.v8i1.2192**:
-2. **DocuPhase. (2023, October 4). Unmasking the scary truths about manual processes. DocuPhase Blog. https://www.docuphase.com/blog/unmasking-the-scary-truths-about-manual-processes**:
    
 
 ## Mock-up
@@ -199,6 +195,10 @@ Product Managed by Admin (Many-to-One)
 - Lack of Coordination: Poor communication can result in misunderstandings, redundant work, or missing project deadlines.
 - Conflicting Ideas: Team members may have different visions or approaches, leading to disagreements on design or implementation.
 - Response Delays: Slow responses in group chats or meetings can stall progress.
+
+## References
+1. **Oganda, P. A., & Terizla, R. F. (2024). Strategic management practices in dynamic business environments. Aptisi Transactions on Management (ATM), 8(1), 24–31. https://doi.org/10.33050/atm.v8i1.2192**:
+2. **DocuPhase. (2023, October 4). Unmasking the scary truths about manual processes. DocuPhase Blog. https://www.docuphase.com/blog/unmasking-the-scary-truths-about-manual-processes**:
 
 
 
