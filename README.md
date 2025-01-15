@@ -115,7 +115,6 @@ System Functionalities:
 2.**Membership Package**:
 - Package ID (PK)
 - Name
-- Duration
 - Price
 
 3.**Member**:
