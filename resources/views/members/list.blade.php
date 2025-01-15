@@ -3,12 +3,12 @@
 @section('content')
 <div style="background-image: url('img/hero/hero-2.jpg'); background-size: cover; background-position: center; padding: 100px 20px 70px; min-height: 100vh;">
     <!-- Heading -->
-    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">List of Members</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 30px; padding-top: 70px;">List of Members</h1>
 
     <!-- Container -->
     <div class="container" style="margin-top: 50px;">
         <!-- Add New Member Button -->
-        <div style="text-align: center; margin-bottom: 30px;">
+        <div style="text-align: center; margin-bottom: 20px;">
             <a href="{{ route('members.create') }}" class="btn btn-success" style="background-color: #28a745; color: white; padding: 10px 20px; font-size: 18px; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Add New Member</a>
         </div>
 
