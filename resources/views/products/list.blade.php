@@ -3,7 +3,7 @@
 @section('content')
 <div style="background-image: url('img/hero/hero-2.jpg'); background-size: cover; background-position: center; padding: 100px 20px 70px; min-height: 100vh;">
     <!-- Adjust the heading position -->
-    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">List of Products</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">LIST OF PRODUCTS</h1>
 
     <!-- Search Input -->
     <div class="container" style="margin-top: 50px;">

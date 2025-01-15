@@ -29,11 +29,12 @@
         }
         .container {
             max-width: 600px;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-            margin-bottom: 100px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        margin-bottom: 100px;
+        margin-top: 100px;
         }
         .form-group label {
             font-family: 'Poppins', sans-serif;
@@ -41,7 +42,7 @@
             letter-spacing: 1px;
             color: #fff;
         }
-        .form-group input, .form-group select, .form-group textarea {
+        .form-group input {
             font-family: 'Poppins', sans-serif;
         }
         .form-control {
@@ -68,27 +69,29 @@
         }
     </style>
 
-    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 20px;"></h1>
-
-<div class="container">
-    <form action="{{ route('trainers.update', $trainer->id) }}" method="POST">
-        @csrf
-        @method('PUT')
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="form-control" value="{{ $trainer->name }}" required>
-        </div>
-        <div class="form-group">
-            <label for="expertise">Expertise</label>
-            <input type="text" name="expertise" class="form-control" value="{{ $trainer->expertise }}" required>
-        </div>
-        <div class="form-group">
-            <label for="availability">Availability</label>
-            <input type="text" name="availability" class="form-control" value="{{ $trainer->availability }}" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Update</button>
-    </form>
+    <div class="container">
+        <form action="{{ route('trainers.update', $trainer->id) }}" method="POST" style="width: 100%;">
+            @csrf
+            @method('PUT')
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" value="{{ $trainer->name }}" required>
+            </div>
+            <div class="form-group">
+                <label for="expertise">Expertise</label>
+                <input type="text" name="expertise" class="form-control" value="{{ $trainer->expertise }}" required>
+            </div>
+            <div class="form-group">
+                <label for="availability">Availability</label>
+                <input type="text" name="availability" class="form-control" value="{{ $trainer->availability }}" required>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit" class="btn btn-primary">Update Trainer</button>
+            </div>
+        </form>
+    </div>
 </div>
+
 <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>

@@ -3,7 +3,7 @@
 @section('content')
 <div style="background-image: url('{{ asset('img/hero/hero-2.jpg') }}'); background-size: cover; background-position: center; padding: 100px 20px 70px; min-height: 100vh;">
     <!-- Adjust the heading position -->
-    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">List of Packages</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">LIST OF PACKAGES</h1>
 
     <!-- Center the package cards -->
     <div class="container" style="margin-top: 50px;">

@@ -3,7 +3,7 @@
 @section('content')
 <div style="background-image: url('img/hero/hero-2.jpg'); background-size: cover; background-position: center; padding: 100px 20px 70px; min-height: 100vh;">
     <!-- Heading -->
-    <h1 style="text-align: center; color: white; margin-bottom: 30px; padding-top: 70px;">List of Members</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 30px; padding-top: 70px;">LIST OF MEMBERS</h1>
 
     <!-- Container -->
     <div class="container" style="margin-top: 50px;">
@@ -25,7 +25,7 @@
                         <th style="text-align: center;">Member Name</th>
                         <th style="text-align: center;">Member ID</th>
                         <th style="text-align: center;">Phone Number</th>
-                        <th style="text-align: center;">Package ID</th>
+                        <th style="text-align: center;">Package</th>
                         <th style="text-align: center;">Gender</th>
                         <th style="text-align: center;">Join Date</th>
                         <th style="text-align: center;">Status</th>
