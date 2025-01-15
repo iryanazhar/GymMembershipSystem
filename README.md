@@ -185,7 +185,7 @@ Product Managed by Admin (Many-to-One)
 ![Alt text](HOME6.png?raw=true)
 ![Alt text](HOME7.png?raw=true)
 
-## Challenges of developing the Application
+## Challenges of Developing the Application
 1. Requirement Analysis
 - We might struggle to balance the scope, potentially making the system too complex or too simplistic for the project's level.
 2. Technical Implementation
