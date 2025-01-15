@@ -186,7 +186,7 @@ Product Managed by Admin (Many-to-One)
 ![photo_6071163442762466752_y](https://github.com/user-attachments/assets/ee2a7af5-ef92-4ead-98b7-fdafe590badc)
 So this is basically what user can see for the homepage
 ![photo_6071163442762466751_y (1)](https://github.com/user-attachments/assets/47ea819a-6502-421b-a59d-95eadda09e27)
-footer for our homepage website where information,email,and contact us
+footer for our homepage website where information,email,and contact us and our loacation
 
 2.Log In
 ![Login](https://github.com/user-attachments/assets/27b9ab22-29d6-44c1-a72d-4b4ece1c1f16)
@@ -198,6 +198,7 @@ For admin who does not register yet. They can do so in this page. After successf
 
 4.Package Page
 ![photo_6071163442762466749_y](https://github.com/user-attachments/assets/cecb2af7-ea52-438f-8591-f1226fa85baf)
+this is the package page where all the information about the package will appear
 ![photo_6071163442762466748_y](https://github.com/user-attachments/assets/0c664382-eed0-4e30-b4dc-7f32f487ad42)
 ![photo_6071163442762466747_y](https://github.com/user-attachments/assets/9b2665aa-b21f-4d59-a9e0-d80acfc98d5b)
 
