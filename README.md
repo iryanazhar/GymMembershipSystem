@@ -188,9 +188,23 @@ Product Managed by Admin (Many-to-One)
 ![Login](https://github.com/user-attachments/assets/27b9ab22-29d6-44c1-a72d-4b4ece1c1f16)
 This is our Log In Page, where the admin can log in into the system.
 
-7. Trainers
+3.Register
+![asz](https://github.com/user-attachments/assets/07be9bad-7e90-4976-823f-4e01dc269c0b)
+For admin who does not register yet. They can do so in this page. After successfully register. They can log in.
+
+4.Package Page
+
+5.Classes Page
+
+6.Members Page
+
+7.Trainers Page
 ![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
 This is the trainer's page, where all the details of our trainers will be in this page. 
+
+8.Products Page
+
+
 
 
 ## Challenges of Developing the Application
