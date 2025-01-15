@@ -199,11 +199,12 @@ For admin who does not register yet. They can do so in this page. After successf
 4.Package Page
 ![photo_6071163442762466749_y](https://github.com/user-attachments/assets/cecb2af7-ea52-438f-8591-f1226fa85baf)
 this is the package page where all the information about the package will appear and the admin can add package
+
 ![photo_6071163442762466748_y](https://github.com/user-attachments/assets/0c664382-eed0-4e30-b4dc-7f32f487ad42)
 When any package is added this is how it looks and user can also search anything in the package page
+
 ![photo_6071163442762466747_y](https://github.com/user-attachments/assets/9b2665aa-b21f-4d59-a9e0-d80acfc98d5b)
-
-
+This is what user can see as form for adding new package or editting any package
 
 5.Classes Page
 
