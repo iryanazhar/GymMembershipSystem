@@ -186,6 +186,10 @@ Product Managed by Admin (Many-to-One)
 2.Log In
 ![Login](https://github.com/user-attachments/assets/27b9ab22-29d6-44c1-a72d-4b4ece1c1f16)
 This is our Log In Page, where the admin can log in into the system.
+7. Trainers
+![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
+This is the trainer's page, where all the details of our trainers will be in this page. 
+
 
 ## Challenges of Developing the Application
 1. Requirement Analysis
