@@ -5,8 +5,13 @@
     <!-- Adjust the heading position -->
     <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 70px;">List of Packages</h1>
 
-    <!-- Center the package cards -->
+    <!-- Search Input -->
     <div class="container" style="margin-top: 50px;">
+        <div class="mb-3 d-flex justify-content-center">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search Packages..." onkeyup="searchPackages()" style="background-color: white; color: black; font-family: 'Arial', sans-serif; font-size: 16px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 0 5px #007bff; width: 50%;">
+        </div>
+
+        <!-- Center the package cards -->
         <div class="packages d-flex flex-wrap justify-content-center" style="margin-bottom: 70px;">
             @foreach($packages as $package)
             <div class="package-box" style="background: #f8f9fa; padding: 15px; margin: 20px 10px; border-radius: 8px; width: 300px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border: 1px solid #dee2e6;">
@@ -31,4 +36,19 @@
         <a href="{{ route('packages.create') }}" class="btn btn-success" style="background-color: #28a745; color: white; padding: 10px 20px; font-size: 18px; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Add Package</a>
     </div>
 </div>
+
+<script>
+    function searchPackages() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();
+        const packages = document.getElementsByClassName('package-box');
+
+        for (let i = 0; i < packages.length; i++) {
+            const packageElement = packages[i];
+            const textContent = packageElement.textContent || packageElement.innerText;
+
+            packageElement.style.display = textContent.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        }
+    }
+</script>
 @endsection
