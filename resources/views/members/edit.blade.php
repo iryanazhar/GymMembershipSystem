@@ -33,6 +33,7 @@
         padding: 30px;
         border-radius: 15px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        margin-bottom: 100px;
     }
     .form-group label {
         font-family: 'Poppins', sans-serif; /* Change to Bebas Neue or any desired font */
@@ -142,7 +143,7 @@
 
             <!-- Submit Button -->
             <div class="form-group text-center">
-                <button type="submit" class="btn btn-primary" style="background-color: blue; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Update Member</button>
+                <button type="submit" class="btn btn-primary" style="background-color: #45a049; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif;">Update Member</button>
             </div>
         </form>
     </div>

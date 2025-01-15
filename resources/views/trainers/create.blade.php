@@ -31,6 +31,7 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 100px;
         }
         .form-group label {
             font-family: 'Poppins', sans-serif;
