@@ -209,6 +209,14 @@ This is what user can see as form for adding new package or editting any package
 5.Classes Page
 
 6.Members Page
+![image](https://github.com/user-attachments/assets/65ba7bcc-6828-41b4-afb3-e7aa9cc22975)
+This is the member's page, where it will display the details of our gym members. There's a button to add new members.
+![image](https://github.com/user-attachments/assets/3f7a3673-7d74-4fd2-9199-7924dfb09b81)
+This page shows form to create and add new members.
+![image](https://github.com/user-attachments/assets/55ef2a02-a40e-4a2f-9e1f-da6a40d26587)
+This page is an example of when a member has been created. There's also edit and remove buttons if admin wants to update or remove a member.
+![image](https://github.com/user-attachments/assets/e6f34f79-068c-4cdc-8eeb-ef32fe9ed6b4
+This page shows form to edit members.
 
 7.Trainers Page
 ![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
