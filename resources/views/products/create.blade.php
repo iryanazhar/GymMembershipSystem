@@ -1,46 +1,116 @@
-@extends('products.layout')
+@extends('master.layout')
 
 @section('content')
-<div style="background-image: url('{{ asset('img/hero/greekmu.jpeg') }}'); background-size: cover; background-position: center; padding: 70px 20px; min-height: 100vh;">
-    <!-- Add Product Title -->
-    <div style="background-color: black; color: #ff1493; text-shadow: 0 0 20px #ff1493; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; border-radius: 8px; margin-bottom: 30px; margin-top: 50px;">
-        Add Product
-    </div>
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/flaticon.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/barfiller.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <!-- Add Product Form -->
-    <div class="container" style="margin-top: 50px;"> <!-- Added margin-top -->
-        <form action="{{ route('products.store') }}" method="POST" style="background: black; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px blue; width: 50%; margin: auto;">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="hero-section" style="padding: 70px 20px; min-height: 100vh;">
+    <style>
+        .hero-section {
+            background-image: url('{{ asset('img/hero/hero-2.jpg') }}');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .form-group label {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            font-family: 'Poppins', sans-serif;
+        }
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .form-control:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+        .btn {
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 20px;"></h1>
+
+    <div class="container">
+        <form action="{{ route('products.store') }}" method="POST">
             @csrf
 
-            <div class="mb-3">
-                <label for="productcode" style="color: blue; text-shadow: 0 0 5px blue;"><strong>Product Code</strong></label>
-                <input type="text" id="productcode" name="productcode" placeholder="Product Code" required class="form-control" style="background-color: black; color: blue; padding: 10px; border-radius: 8px; border: 1px solid blue; box-shadow: 0 0 5px blue;">
+            <div class="form-group">
+                <label for="productcode">Product Code</label>
+                <input type="text" id="productcode" name="productcode" class="form-control" placeholder="Product Code" required>
             </div>
 
-            <div class="mb-3">
-                <label for="name" style="color: blue; text-shadow: 0 0 5px blue;"><strong>Name</strong></label>
-                <input type="text" id="name" name="name" placeholder="Product Name" required class="form-control" style="background-color: black; color: blue; padding: 10px; border-radius: 8px; border: 1px solid blue; box-shadow: 0 0 5px blue;">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Product Name" required>
             </div>
 
-            <div class="mb-3">
-                <label for="price" style="color: blue; text-shadow: 0 0 5px blue;"><strong>Price</strong></label>
-                <input type="number" id="price" name="price" placeholder="Price" required class="form-control" style="background-color: black; color: blue; padding: 10px; border-radius: 8px; border: 1px solid blue; box-shadow: 0 0 5px blue;">
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" class="form-control" placeholder="Price" required>
             </div>
 
-            <div class="mb-3">
-                <label for="stock" style="color: blue; text-shadow: 0 0 5px blue;"><strong>Stock</strong></label>
-                <input type="number" id="stock" name="stock" placeholder="Stock" required class="form-control" style="background-color: black; color: blue; padding: 10px; border-radius: 8px; border: 1px solid blue; box-shadow: 0 0 5px blue;">
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" name="stock" class="form-control" placeholder="Stock" required>
             </div>
 
-            <div class="mb-3">
-                <label for="description" style="color: blue; text-shadow: 0 0 5px blue;"><strong>Description</strong></label>
-                <textarea id="description" name="description" placeholder="Description" class="form-control" style="background-color: black; color: blue; padding: 10px; border-radius: 8px; border: 1px solid blue; box-shadow: 0 0 5px blue;"></textarea>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" class="form-control" rows="4" placeholder="Description"></textarea>
             </div>
 
-            <div style="text-align: center;">
-                <button type="submit" class="btn btn-primary" style="background-color: blue; color: white; font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif; padding: 10px 20px; border-radius: 8px;">Save</button>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Save</button>
             </div>
         </form>
     </div>
 </div>
+
+<script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
+<script src="{{ asset('js/jquery.barfiller.js') }}"></script>
+<script src="{{ asset('js/jquery.slicknav.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+
 @endsection
