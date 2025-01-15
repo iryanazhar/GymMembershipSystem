@@ -67,9 +67,10 @@
         }
     </style>
 
-<h1 style="text-align: center; color: white; margin-bottom: 70px; padding-top: 20px;"></h1>
+<h1 style="text-align: center; margin-bottom: 70px; padding-top: 20px;"></h1>
 
-    <form action="{{ route('classes.store') }}" method="POST" style="background: black; padding: 20px; border-radius: 8px; width: 50%; margin: auto;">
+<div class="container">
+    <form action="{{ route('classes.store') }}" method="POST">
         @csrf
 
         <div class="form-group">
@@ -117,6 +118,7 @@
         </div>
     </form>
 </div>
+
 
 <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
