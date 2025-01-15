@@ -203,7 +203,8 @@ For admin who does not register yet. They can do so in this page. After successf
 This is the trainer's page, where all the details of our trainers will be in this page. 
 
 8.Products Page
-
+![no1](https://github.com/user-attachments/assets/07766f07-9587-4ab0-b589-204a11ebb9a0)
+This page display 
 
 
 
