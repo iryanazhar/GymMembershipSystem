@@ -189,7 +189,7 @@ Product Managed by Admin (Many-to-One)
 1. Requirement Analysis
 - We might struggle to balance the scope, potentially making the system too complex or too simplistic for the project's level.
 2. Technical Implementation
--Error Handling and Debugging: Debugging system errors, especially in complex functionalities like class bookings or payment validation, can be time-consuming.
+- Error Handling and Debugging: Debugging system errors, especially in complex functionalities like class bookings or payment validation, can be time-consuming.
 3. Time Constraints
 - Time Management: Balancing the development process with other academic commitments can lead to rushed or incomplete features.
 4. Division of Tasks
