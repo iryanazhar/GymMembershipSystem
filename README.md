@@ -220,7 +220,7 @@ This page shows form to edit members.
 
 7.Trainers Page
 ![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
-This is the trainer's page, where all the details of our trainers will be in this page. 
+This is the trainer's page, where all the details of our trainers will be in this page. There is a add trainer button which new trainer will added into the list.
 
 8.Products Page
 ![no1](https://github.com/user-attachments/assets/07766f07-9587-4ab0-b589-204a11ebb9a0)
