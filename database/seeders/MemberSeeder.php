@@ -20,10 +20,10 @@ class MemberSeeder extends Seeder
 
     for ($i = 0; $i < 20; $i++) {
         \App\Models\Member::create([
-            'id' => $faker->unique()->numerify('M####'), // Unique member ID
+            'id' => $faker->unique()->numerify('M###'), // Unique member ID
             'name' => $faker->name,
             'contact_information' => $faker->numerify('01#-########'),
-            'membership_package_id' => $faker->randomElement(['Basic', 'Pro', 'Student', 'Daily Access']),
+            'membership_package_id' => $faker->randomElement(['Basic', 'Standard', 'Premium']),
             'gender' => $faker->randomElement(['male', 'female']),
             'join_date' => $faker->date(),
             'status' => $faker->randomElement(['active', 'inactive']),

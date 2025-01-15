@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+<!-- Add Google Font for "Poppins" or "Bebas Neue" -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
 <div class="hero-section" style="padding: 70px 20px; min-height: 100vh;">
     <style>
         .hero-section {
@@ -18,8 +21,57 @@
             background-size: cover;
             background-position: center;
         }
+        h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+    .container {
+        max-width: 600px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .form-group label {
+        font-family: 'Poppins', sans-serif; /* Change to Bebas Neue or any desired font */
+        font-weight: 500; /* Adjust as necessary */
+        letter-spacing: 1px;
+        color: #fff;
+    }
+    .form-group input, .form-group select {
+            font-family: 'Poppins', sans-serif;
+    }
+    .form-control {
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .form-control:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+    .btn {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    .btn-success {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+    }
+    .btn-success:hover {
+        background-color: #45a049;
+    }
+    .alert-danger {
+        border-radius: 10px;
+        background-color: #f8d7da;
+        color: #721c24;
+    }
     </style>
-    <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;">Edit Member</h1>
+    <h1 style="text-align: center; color: white; margin-bottom: 50px; padding-top: 20px;"></h1>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -67,10 +119,9 @@
             <div class="form-group">
                 <label for="membership_package_id" style="color: white;">Package Name</label>
                 <select class="form-control" name="membership_package_id" required>
-                    <option value="basic" {{ old('membership_package_id', $member->membership_package_id) == 'basic' ? 'selected' : '' }}>Basic</option>
-                    <option value="pro" {{ old('membership_package_id', $member->membership_package_id) == 'pro' ? 'selected' : '' }}>Pro</option>
-                    <option value="student" {{ old('membership_package_id', $member->membership_package_id) == 'student' ? 'selected' : '' }}>Student</option>
-                    <option value="daily_access" {{ old('membership_package_id', $member->membership_package_id) == 'daily_access' ? 'selected' : '' }}>Daily Access</option>
+                    @foreach ($package as $pkg)
+                        <option value="{{ $pkg->id }}">{{ $pkg->name }}</option>
+                    @endforeach
                 </select>
             </div>
 

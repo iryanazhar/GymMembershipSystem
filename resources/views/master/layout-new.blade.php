@@ -55,10 +55,10 @@
             <ul>
                 <li><a href="/login">Log In</a></li>
                 <li><a href="/packages">Package</a></li>
-                <li><a href="./classes">Classes</a></li>
-                <li><a href="./members">Members</a></li>
-                <li><a href="./trainers">Trainer</a></li>
-                <li><a href="./products">Products</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/members">Members</a></li>
+                <li><a href="/trainers">Trainer</a></li>
+                <li><a href="/products">Products</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -85,12 +85,14 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-
+                            <li><a href="/">Homepage</a></li>
+                            <li><a href="/login">Log In</a></li>
+                            <li><a href="/register">Register</a></li>
                             <li><a href="/packages">Package</a></li>
-                            <li><a href="./classes">Classes</a></li>
-                            <li><a href="./members">Members</a></li>
-                            <li><a href="./trainers">Trainers</a></li>
-                            <li><a href="./products">Products</a></li>
+                            <li><a href="/classes">Classes</a></li>
+                            <li><a href="/members">Members</a></li>
+                            <li><a href="/trainers">Trainers</a></li>
+                            <li><a href="/products">Products</a></li>
                         </ul>
                     </nav>
                 </div>
