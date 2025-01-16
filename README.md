@@ -207,6 +207,14 @@ When any package is added this is how it looks and user can also search anything
 This is what user can see as form for adding new package or editting any package
 
 5.Classes Page
+![image](https://github.com/user-attachments/assets/4682f19e-43ce-4fba-8877-8ac3ecbb321d)
+This is the **Class List** page, where the admin can view all classes registered in the gym management system. The page displays detailed information for each class, including the class code, class name, time, duration, capacity, and assigned trainer.
+
+![image](https://github.com/user-attachments/assets/7459f871-5f9f-40f9-a2a6-81f5ff62c13e)
+This is the **Add Class** page, where the admin can add new types of classes to the gym management system. This feature ensures that the admin can accurately input class details and organize the data for easy navigation and future reference.
+
+![image](https://github.com/user-attachments/assets/47850257-4a1c-4492-bad2-3eecc9b0fab5)
+This is the **Edit Class** page, where the admin can update the details of existing classes in the gym management system. This feature allows the admin to modify class information accurately and ensures that the data remains up-to-date and well-organized for future reference.
 
 6.Members Page
 ![image](https://github.com/user-attachments/assets/e05229a3-f8f9-47fa-9ede-3082c775a8b2)
@@ -220,7 +228,13 @@ This page shows form to edit members.
 
 7.Trainers Page
 ![TRAINERS](https://github.com/user-attachments/assets/cdebe493-277d-4787-8a8b-506bacea2060)
-This is the trainer's page, where all the details of our trainers will be in this page. There is a add trainer button which new trainer will added into the list.
+This is the **Trainer's Page**, where all the details of our trainers, including their names, expertise, and availability, are displayed. There is an **Add Trainer** button, which allows new trainers to be added to the list.
+
+![image](https://github.com/user-attachments/assets/6f89ede4-96b5-4d60-b526-cfe5525f0fa0)
+This is the **Add Trainer Page**, where admins can add new trainers to the gym management system. It allows for entering details such as the trainer's name, expertise, and availability to ensure accurate and organized records.
+
+![image](https://github.com/user-attachments/assets/f4bb8a42-eaae-4354-87cd-5aa11550da2f)
+This is the **Edit Trainer Page**, where admins can update the details of existing trainers in the gym management system. It allows for modifications to information such as the trainer's name, expertise, and availability, ensuring the records are current and well-maintained.
 
 8.Products Page
 ![no1](https://github.com/user-attachments/assets/07766f07-9587-4ab0-b589-204a11ebb9a0)
